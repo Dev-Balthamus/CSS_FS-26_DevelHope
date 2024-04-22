@@ -30,17 +30,17 @@ ul li {
 }
 
 .link1 a {
-  text-rendering: inherit;
+  color: inherit;
   padding: inherit;
 }
 
 .link2 a {
-  text-rendering: initial;
+  color: initial;
   padding: initial;
 }
 
 .link3 a {
-  text-rendering: unset;
+  color: unset;
   padding: unset;
 }
 
