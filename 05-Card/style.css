@@ -1,0 +1,38 @@
+table {
+  margin: 0 auto;
+  border: 1px solid rgb(200, 200, 200);
+  border-collapse: collapse;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+th,
+td {
+  border: 1px solid rgb(200, 200, 200);
+  padding: 10px 20px;
+  width: 235px;
+}
+
+th {
+  border-radius: 3px;
+  background-color: rgb(160, 170, 170);
+  height: 117px;
+  color: white;
+}
+
+h1,
+p,
+ul {
+  margin: 0px;
+}
+
+ul {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+
+li {
+  display: inline-block;
+  padding-right: 8%;
+}
