@@ -1,0 +1,138 @@
+body {
+  position: relative;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 175px 0 0 -175px;
+  min-height: 350px;
+  min-width: 350px;
+  border: 1px hidden white;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #444;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: [header] 10% [buttons] 90% [footer];
+}
+
+#screen {
+  grid-row: header / buttons;
+  align-self: center;
+  justify-self: end;
+  min-height: 50px;
+}
+
+#screen p {
+  color: white;
+  font-size: 35px;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+section {
+  grid-row: buttons / footer;
+  max-height: 300px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: [one] 20% [two] 20% [three] 20% [four] 20% [five] 20% [six];
+}
+
+section button {
+  border: 1px solid #444;
+  background-color: whitesmoke;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.operators {
+  grid-row: one / two;
+  background-color: rgba(202, 209, 216);
+  font-size: 20px;
+}
+
+#plus {
+  grid-column: 1;
+}
+
+#minus {
+  grid-column: 2;
+}
+
+#per {
+  grid-column: 3;
+}
+
+#divide {
+  grid-column: 4;
+}
+
+#seven {
+  grid-column: 1;
+  grid-row: two / three;
+}
+
+#eight {
+  grid-column: 2;
+  grid-row: two / three;
+}
+
+#nine {
+  grid-column: 3;
+  grid-row: two / three;
+}
+
+#four {
+  grid-column: 1;
+  grid-row: three / four;
+}
+
+#five {
+  grid-column: 2;
+  grid-row: three / four;
+}
+
+#six {
+  grid-column: 3;
+  grid-row: three / four;
+}
+
+#one {
+  grid-column: 1;
+  grid-row: four / five;
+}
+
+#two {
+  grid-column: 2;
+  grid-row: four / five;
+}
+
+#three {
+  grid-column: 3;
+  grid-row: four / five;
+}
+
+#zero {
+  grid-column: 1;
+  grid-row: five / six;
+}
+
+#dot {
+  grid-column: 2;
+  grid-row: five / six;
+}
+
+#ac {
+  grid-column: 3;
+  grid-row: five / six;
+}
+
+#equal {
+  grid-column: 4;
+  grid-row: two / six;
+  background-color: rgb(255, 112, 112);
+  font-size: 20px;
+}
