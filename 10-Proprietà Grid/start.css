@@ -1,0 +1,35 @@
+body {
+  display: grid;
+  grid-template-columns: [c-one] 1fr [c-two] 1fr [c-three] 1fr [c-four];
+  grid-template-rows: [r-one] 0.5fr [r-two] 1fr [r-three] 0.5fr [r-four];
+}
+
+#green {
+  grid-column: c-one / span 3;
+  grid-row: r-one / r-two;
+}
+
+#yellow {
+  grid-column: c-one / span 1;
+  grid-row: r-two / r-three;
+}
+
+#red {
+  grid-column: c-two / span 1;
+  grid-row: r-two / r-three;
+}
+
+#blue {
+  grid-column: c-three / span 1;
+  grid-row: r-two / r-four;
+}
+
+#orange {
+  grid-column: c-one / span 2;
+  grid-row: r-three / r-four;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
