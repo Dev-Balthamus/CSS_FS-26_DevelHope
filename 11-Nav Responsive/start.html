@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Esercizio della NavBar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="bar">
+        <span id="title">NavBar</span>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <span id="container">
+          <button id="element" class="bar-btn-link primary">Home</button>
+          <button id="element" class="bar-btn-link secondary">Link</button>
+          <select id="element" class="bar-btn secondary">
+            <option value="Dropdown">Dropdown</option>
+          </select>
+          <button id="element" class="bar-btn no-work" disabled>Disabled</button>
+          <span id="element" class="search-form">
+            <input type="text" placeholder="Search" />
+            <button type="button">Search</button>
+          </span>
+        </span>
+      </nav>
+      <hr />
+    </header>
+  </body>
+</html>
